@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Test Site">
+    <meta name="keywords" content="Learning , test" >
+    <meta name="author" content="Prisyazchnyuk Timofiy">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title class="fa fa-apple" aria-hidden="true"> Learn Test </title>
+    <link rel="icon" class="fa fa-apple" aria-hidden="true">
+    <link rel="stylesheet"  href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Навигаця , меню , шапка сайта -->
+<nav class="navbar  navbar-inverse navbar-fixed-top" id="navMenu" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="bloc-logo">
+                <canvas id="logo-canvas"></canvas>
+                <a href="3.html" class="logo-mask"></a>
+            </div>
+        </div>
+            <nav class="collapse navbar-collapse navbar-right" id="navbar-main">
+                <ul  class="nav navbar-nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mac</a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li><a class="fa fa-laptop" aria-hidden="true" href="#"> MacBook</a></li>
+                          <li><a class="fa fa-laptop" aria-hidden="true" href="#"> MacBook Air</a></li>
+                          <li><a class="fa fa-laptop" aria-hidden="true" href="#"> MacBook Pro</a></li>
+                          <li><a class="fa fa-laptop" aria-hidden="true" href="#"> iMac</a></li>
+                          <li><a class="fa fa-laptop" aria-hidden="true" href="#"> Mac mini</a></li>
+                      </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">iPad</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="fa fa-tablet" aria-hidden="true" href="#"> iPad</a></li>
+                            <li><a class="fa fa-tablet" aria-hidden="true" href="#"> iPad mini</a></li>
+                            <li><a class="fa fa-tablet" aria-hidden="true" href="#"> iPad Pro</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">iPhone</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="fa fa-mobile" aria-hidden="true" href="#"> iPhone SE</a></li>
+                            <li><a class="fa fa-mobile" aria-hidden="true" href="#"> iPhone 6</a></li>
+                            <li><a class="fa fa-mobile" aria-hidden="true" href="#"> iPhone 7</a></li>
+                            <li><a class="fa fa-mobile" aria-hidden="true" href="#"> iPhone 8</a></li>
+                            <li><a class="fa fa-mobile" aria-hidden="true" href="#"> iPhone X</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Watch</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="fa fa-clock-o" aria-hidden="true" href="#"> Watch 1</a></li>
+                            <li><a class="fa fa-clock-o" aria-hidden="true" href="#"> Watch Edit</a></li>
+                            <li><a class="fa fa-clock-o" aria-hidden="true" href="#"> Watch Harm</a></li>
+                            <li><a class="fa fa-clock-o" aria-hidden="true" href="#"> Watch 3</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TV</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="fa fa-television" aria-hidden="true" href="#"> TV App</a></li>
+                            <li><a class="fa fa-television" aria-hidden="true" href="#"> Apple TV</a></li>
+                            <li><a class="fa fa-television" aria-hidden="true" href="#"> Apple TV 4K</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Music</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="fa fa-headphones" aria-hidden="true" href="#"> iPod touch</a></li>
+                            <li><a class="fa fa-play" aria-hidden="true" href="#"> Music Access</a></li>
+                            <li><a class="fa fa-music" aria-hidden="true" href="#"> Apple Music</a></li>
+                        </ul></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="fourm-group navbar-collapse" id="navSearch">
+                        <input type="text" class="form-control"  size="15" placeholder="Search">
+                        <button type="submit" id="search_button" class="btn btn-success navbar-inverse btn-right">
+                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </button>
+                    </div>
+                </form>
+              </nav>
+        </div>
+    </nav>
+<!--  NAV_MENU_NAVIGATION  -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-10 col-lg-offset-1 col-md-12" id="head_menu_nav">
+                <ul class="Gadgets">
+                    <li id="item_1" class="fa fa-laptop" aria-hidden="true"><a href="#">MacBook</a></li>
+                    <li id="item_2" class="fa fa-laptop" aria-hidden="true"><a href="#">MacBook Pro</a></li>
+                    <li id="item_3" class="fa fa-desktop" aria-hidden="true"><a href="#">iMac Pro</a></li>
+                    <li id="item_4" class="fa fa-tablet" aria-hidden="true"><a href="#">iPad Pro</a></li>
+                    <li id="item_5" class="fa fa-mobile" aria-hidden="true"><a href="#">iPhone X</a></li>
+                    <li id="item_6" class="fa fa-mobile" aria-hidden="true"><a href="#">iPhone 8</a></li>
+                    <li id="item_7" class="fa fa-window-minimize" aria-hidden="true"><a href="#">Mac mini</a></li>
+                    <li id="item_8" class="fa fa-headphones" aria-hidden="true"><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Слайдер (5 слайдов + елемент навигации) + Гармошка-->
+<div class="container-fluid ParentsMenu" id="backgroundBlock2">
+    <div  class="row">
+        <div class="col-lg-12">
+            <div id="carousel" class="carousel slide col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active"><img src="img/slide0.jpg" alt="Apple-device">
+                        <div class="carousel-caption">
+                            <h3>First slide</h3>
+                            <p>Placeholder at slide</p>
+                        </div>
+                    </div>
+                    <div class="item"><img src="img/slide1.jpeg" alt="Apple-device">
+                        <div class="carousel-caption">
+                            <h3>Second slide</h3>
+                            <p>Placeholder at slide</p>
+                        </div>
+                    </div>
+                    <div class="item"><img src="img/slide2.jpg" alt="Apple-device">
+                        <div class="carousel-caption">
+                            <h3>Third slide</h3>
+                            <p>Placeholder at slide</p>
+                        </div>
+                    </div>
+                    <div class="item"><img src="img/slide3.jpg" alt="Apple-device">
+                                <div class="carousel-caption">
+                            <h3>Fourth slide</h3>
+                            <p>Placeholder at slide</p>
+                        </div>
+                    </div>
+                    <div class="item"><img src="img/slide4.jpg" alt="Apple-device">
+                        <div class="carousel-caption">
+                            <h3>Fifth slide</h3>
+                            <p>Placeholder at slide</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Стрекли переключения слайдов-->
+                    <a href="#carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a href="#carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            <!--Гармошка -->
+            <div class="col-lg-3 col-md-10 col-sm-12 col-xs-12">
+                <div id="navLinks">
+                    <div class="panel-heading">
+                        <h1><span>Ч</span><span>А</span><span>С</span><span>Т</span><span>0</span><span> </span>
+                            <span>И</span><span>Щ</span><span>У</span><span>Т</span><span> </span><span>:</span></h1>
+                    </div>
+                    <ul id="navLinksControl">
+                        <li class="itemLinksNav fa fa-battery-three-quarters fa-2x" aria-hidden="true" data-pos="0"></li>
+                        <li class="itemLinksNav fa fa-plug fa-2x" aria-hidden="true" data-pos="200"></li>
+                        <li class="itemLinksNav fa fa-connectdevelop fa-2x" aria-hidden="true" data-pos="100"></li>
+                        <li class="itemLinksNav fa fa-headphones fa-2x" aria-hidden="true" data-pos="300"></li>
+                    </ul>
+                    <div id="contentContainer">
+                        <div id="wrapperList">
+                            <div class="contentNav">
+                                <div class="wordListNAv">
+                                    <p>Native Union ECLIPSE Charger</p>
+                                </div>
+                                <div class="TwoButton">
+                                    <span>2160 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                                <img src="img/news1.png" alt="">
+                            </div>
+                            <div class="contentNav">
+                                <div class="wordListNAv">
+                                <p>Thunderbolt (USB‑C) Cable(0.8 m)</p>
+                                </div>
+                                <div class="TwoButton">
+                                    <span>945 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                                <img src="img/news2.png" alt="">
+                            </div>
+                            <div class="contentNav">
+                                <div class="wordListNAv">
+                                <p>MagSafe 2 Power Adapter 45W </p>
+                                </div>
+                                <div class="TwoButton">
+                                    <span>2096 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                                <img src="img/news3.png" alt="">
+                            </div>
+                            <div class="contentNav">
+                                <div class="wordListNAv">
+                                <p>AirPods</p>
+                                </div>
+                                <div class="TwoButton">
+                                    <span>4320 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                                <img src="img/news4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Content 1 -->
+<div class="container-fluid ParentsMenu">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 PrewContent1">
+                <div class="WordContent">
+                    <div class="TextShadow"><h3> <span>Pro Apps</span></h3></div>
+                    <p>Для профессионалов, готовых поднять творческий потенциал, эти ведущие в отрасли приложения
+                        обеспечивают максимальный контроль над редактированием, обработкой и выпуском музыки и фильма.</p>
+                    <hr>
+                </div>
+                <div class="main_item">
+                    <ul class="group_item">
+                        <li class="nav_item1" data-pos="0px"><img src="img/nav_item2.png" alt="">
+                            <p>Final Cut Pro X</p></li>
+                        <li class="nav_item1" data-pos="-100%"><img src="img/nav_item3.png" alt="">
+                            <p>Logic Pro X</p></li>
+                        <li class="nav_item1" data-pos="-200%"><img src="img/nav_item1.png" alt="">
+                            <p>Motion</p></li>
+                        <li class="nav_item1" data-pos="-300%"><img src="img/nav_item5.png" alt="">
+                            <p>Compressor</p></li>
+                        <li class="nav_item1" data-pos="-400%"><img src="img/nav_item4.png" alt="">
+                            <p>MaineStage 3</p></li>
+                    </ul>
+                </div>
+                <div id="SlideContent">
+                    <div id="polosa">
+                        <div class="Final_Cat">
+                            <div><img src="img/final.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Final Cut Pro X</h3>
+                                <span>Final Cut Pro, созданный для удовлетворения потребностей современных творческих редакторов,
+                                    предлагает революционное редактирование видео, мощную медиа-организацию и невероятную
+                                    производительность, оптимизированную для компьютеров Mac и MacOS High Sierra.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/Logic-Pro-X.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Logic Pro X</h3>
+                                <span> Logic Pro создает полную студию для записи и производства MIDI на вашем Mac, со всем,
+                                    что вам нужно, чтобы записывать, записывать, редактировать и смешивать, как никогда раньше.
+                                    И с огромной коллекцией полнофункциональных плагинов вместе с тысячами звуков и петель
+                                    у вас будет все, что вам нужно.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/Motion.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Motion</h3>
+                                <span>Motion - это мощный графический инструмент для движения, который позволяет создавать
+                                    кинематографические 2D и 3D-заголовки, жидкостные переходы и реалистичные эффекты в
+                                    реальном времени.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/Compressor.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Compressor</h3>
+                                <span>Добавьте мощность и гибкость для экспорта проектов Final Cut Pro. Настройте параметры
+                                    вывода, работайте быстрее с распределенной кодировкой и легко упакуйте свой фильм в
+                                    iTunes Store. Компрессор - идеальный компаньон для пользовательской кодировки.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/MainStage.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>MainStage 3</h3>
+                                <span>Возьмите Mac на сцену с полноэкранным интерфейсом, оптимизированным для живой работы,
+                                    гибким аппаратным управлением
+                                    и массивной коллекцией плагинов и звуков, которые полностью совместимы с Logic Pro X.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-6 col-sm-6 col-xs-12  pull-right PrewContent2">
+                <div class="WordContent">
+                    <div class="TextShadow1"><h3> <span>Built-in Apps</span></h3></div>
+                    <p>Мощные инструменты для творчества работают внутри каждого Mac - приложения помогают вам
+                        более эффективно изучать, подключаться и работать. Откройте для себятысячи других в Mac App Store.</p>
+                    <hr>
+                </div>
+                <div class="main_item">
+                    <ul class="group_item">
+                        <li class="nav_item2" data-pos="0px"><img src="img/photos.png" alt="">
+                            <p>Photos</p></li>
+                        <li class="nav_item2" data-pos="-100%"><img src="img/imovie.png" alt="">
+                            <p>iMovie</p></li>
+                        <li class="nav_item2" data-pos="-200%"><img src="img/garageband.png" alt="">
+                            <p>GarageBand</p></li>
+                        <li class="nav_item2" data-pos="-300%"><img src="img/pages.png" alt="">
+                            <p>Pages</p></li>
+                        <li class="nav_item2" data-pos="-400%"><img src="img/safari.png" alt="">
+                            <p> Safari 3</p></li>
+                    </ul>
+                </div>
+                <div id="SlideContent1">
+                    <div id="polosa1">
+                        <div class="Final_Cat">
+                            <div><img src="img/ProPhotos.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Photos</h3>
+                                <span>Держите свою растущую библиотеку организованной и доступной. Совершенствуйте свои
+                                    образы и создавайте красивые подарки для обмена. И с iCloud Photo Library вы можете
+                                    хранить фотографии и видео в течение жизни в облаке.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/iMovie1.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>iMovie</h3>
+                                <span>Рассказывайте истории, как никогда раньше. Простой дизайн и интуитивно понятные
+                                    функции редактирования позволяют легко создавать красивые фильмы 4K и голливудские трейлеры.
+                                    И с iMovie Theater вы можете наслаждаться ими на всех ваших устройствах.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/Garage.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>GarageBand</h3>
+                                <span>Самый простой способ создать великолепные песни на вашем Mac. Благодаря интуитивно
+                                    понятному интерфейсу и доступу к полной звуковой библиотеке никогда не было проще учиться,
+                                    играть, записывать и делиться музыкой, как профессионал.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/Page.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3>Pages</h3>
+                                <span>Этот мощный текстовый процессор дает вам все необходимое для создания документов,
+                                    которые выглядят красиво. И читайте красиво. Он позволяет легко работать между
+                                    устройствами Mac и iOS. И работайте без усилий с людьми, которые используют Microsoft Word.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                        <div class="Final_Cat">
+                            <div><img src="img/safar.png" alt="IOS"></div>
+                            <div class="wordImgContent">
+                                <h3> Safari 3</h3>
+                                <span>В Safari есть всевозможные инновационные функции, которые позволяют вам наслаждаться
+                                   Интернетом. Энергосберегающие технологии позволяют вам работать дольше.
+                                   Вы можете легко просматривать все на любых устройствах. И легко делиться любимыми страницами.
+                                <br><a href="">Learn more..</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Slide Content Product  -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 ParentsMenu" id="backgroundBlock1">
+            <div class="SlideContent col-md-11">
+                <div class="PrevList">
+                    <div class="panel-heading">
+                        <h1><span>A</span><span>p</span><span>p</span><span>l</span><span>e</span> <span>i
+                        </span><span>P</span><span>h</span><span>o</span><span>n</span><span>e</span><span>:</span></h1>
+                    </div>
+                </div>
+                <ul id="wrapperSlideContent">
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphoneX1.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 10 <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (5.8", OLED (Super Retina HD),
+                                    2436x1125)/ Apple A11 Bionic/ основная камера: двойная 12 Мп, фронтальная камера: 7
+                                    Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 11
+                                </p>
+                                <div class="TwoButton">
+                                    <span>43.500 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div  class="itemImg">
+                            <img src="img/iPhone 7.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 7 <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (4.7", IPS, 1334x750)/ Apple A10
+                                    Fusion/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 2 ГБ/ 32 ГБ встроенной
+                                    памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 10
+                                </p>
+                                <div class="TwoButton">
+                                    <span>24.650 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphone7i.png" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 7+ <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true">  Экран (5.5", IPS, 1920x1080)/ Apple A10
+                                    Fusion/ основная камера: двойная 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 256 ГБ
+                                    встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 10
+                                </p>
+                                <div class="TwoButton">
+                                    <span>27.670 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphone-8.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 8 <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (4.7", IPS, 1334х750)/ Apple A11
+                                    Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 2 ГБ/ 64 ГБ встроенной
+                                    памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 11
+                                </p>
+                                <div class="TwoButton">
+                                    <span>30.850 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphone8i.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 8+ <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (5.5", IPS, 1920x1080)/ Apple A11
+                                    Bionic/ основная камера: двойная 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 64 ГБ
+                                    встроенной памяти/3G/ LTE/ GPS/ Nano-SIM/ iOS 11
+                                </p>
+                                <div class="TwoButton">
+                                    <span>32.420 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphoneX.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 10 <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (5.8", OLED (Super Retina HD),
+                                    2436x1125)/ Apple A11 Bionic/ основная камера: двойная 12 Мп, фронтальная камера: 7
+                                    Мп/ RAM 3 ГБ/ 64 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 11
+                                </p>
+                                <div class="TwoButton">
+                                    <span>44.520 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphone6.jpg" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 6 <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true"> Экран (4.7", IPS, 1334x750)/ Apple A8
+                                    (1.4 ГГц)/ основная камера: 8 Мп, фронтальная камера: 1.2 Мп/ RAM 1 ГБ/ 32 ГБ
+                                    встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 8/ 1810 мА*ч
+                                </p>
+                                <div class="TwoButton">
+                                    <span>11.430 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wrapperContent">
+                        <div class="itemImg">
+                            <img src="img/iphone8m.png" alt="">
+                            <div class="wordItem">
+                                <h4>iPhone 8+ <span class="fa fa-apple" aria-hidden="true"></span></h4>
+                                <small><b>Специальная цена до 1 января</b></small>
+                                <p class="fa fa-commenting-o" aria-hidden="true">Экран (5.5", IPS, 1920x1080)/ Apple A11
+                                    Bionic/ основная камера: двойная 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 256 ГБ
+                                    встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 11
+                                </p>
+                                <div class="TwoButton">
+                                    <span>33.950 UAN</span>
+                                    <a type="button" href=""><b>Смотреть..</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--  Control Wrapper-->
+                <div class="control">
+                    <div id="controlLeft">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                    <div id="controlRight" >
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shows Prev -->
+<div class="container-fluid ParentsMenu">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="leftPanelHeading">
+                <div class="panel-heading">
+                    <h1><span>M</span><span>о</span><span>r</span><span>e</span> <span>A</span><span>p</span><span>p
+                    </span><span>l</span><span>e</span><span>:</span></h1>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 prev_menu">
+                <div class="thumb">
+                    <div class="content">
+                        <h2>IOS 11</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew1.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Apple Store</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew2.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Music</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew3.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Dictation</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew4.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>iCloud</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew5.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Music Card</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew6.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Apple Pay</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew7.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>iTunes</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew8.png">
+                    </div>
+                </div>
+                <div class="thumb">
+                    <div class="content">
+                        <h2>Siri</h2>
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <p>Learn more...</p>
+                    </div>
+                    <div class="wrapper">
+                        <img src="img/Prew9.png">
+                    </div>
+                </div>
+            </div>
+            <!--    Prew2 Content Slider-->
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  Prew2">
+                <a id="Pre2ControlPrev" class="fa fa-chevron-left" aria-hidden="true"></a>
+                <a id="Pre2ControlNext" class="fa fa-chevron-right" aria-hidden="true"></a>
+                <div id="Prew2Wrapper">
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.13.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>iPhone X</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.13.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.19.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac Book Pro 13</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.19.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.17.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Magic Trackpad2</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.17.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.6.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Watch 3</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.6.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.8.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>TV 4K</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.8.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.18.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac Book 12.5</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.18.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.9.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac Book Air 13</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.9.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.15.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac mini</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.15.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.4.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>iPod touch</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.4.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.1.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>KeyBooard</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.1.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.3.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac Book Pro 15</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.3.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.11.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>iMac 24</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.11.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.5.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>HomePod</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.5.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.10.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Belkin Boost Up</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.10.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.16.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Mac Book Pro 13</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.16.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Prew2Content">
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.7.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>New Mac pro</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.7.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.12.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>iMac 27</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.12.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                        <li class="itemPrew2">
+                            <img src="img/Prew2.14.png" alt="">
+                            <div class="Prew2Text">
+                                <h2>Magic mouse 2</h2>
+                                <p> Already at the shop</p>
+                                <img src="img/Prew2.14.png" alt="">
+                                <a href="">Learn more..</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Footer Site-->
+<footer>
+    <img class="footerImg" src="img/forest2.png" alt="forest">
+    <canvas id="canvas-image-blending"></canvas>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 footerContent">
+                    <div class="col-md-2 footerFloatItem">
+                        <ul class="footerItem">
+                            <li class="itemContentFooter"><p><b>Shop and Learn</b></p></li>
+                            <li class="itemContentFooter"><a href="#">Mac</a></li>
+                            <li class="itemContentFooter"><a href="#">iPad</a></li>
+                            <li class="itemContentFooter"><a href="#">iPhone</a></li>
+                            <li class="itemContentFooter"><a href="#">Watch</a></li>
+                            <li class="itemContentFooter"><a href="#">TV</a></li>
+                            <li class="itemContentFooter"><a href="#">Music</a></li>
+                            <li class="itemContentFooter"><a href="#">iTunes</a></li>
+                            <li class="itemContentFooter"><a href="#">HomePod</a></li>
+                            <li class="itemContentFooter"><a href="#">iPod touch</a></li>
+                            <li class="itemContentFooter"><a href="#">Accessories</a></li>
+                            <li class="itemContentFooter"><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footerFloatItem">
+                        <ul class="footerItem">
+                            <li class="itemContentFooter"><p><b>Apple Store</b></p></li>
+                            <li class="itemContentFooter"><a href="#">Find a Store</a></li>
+                            <li class="itemContentFooter"><a href="#">Genius Bar</a></li>
+                            <li class="itemContentFooter"><a href="#">Today at Apple</a></li>
+                            <li class="itemContentFooter"><a href="#">Apple Camp</a></li>
+                            <li class="itemContentFooter"><a href="#">Field Trip</a></li>
+                            <li class="itemContentFooter"><a href="#">Apple Store App</a></li>
+                            <li class="itemContentFooter"><a href="#">Refurbished and Clearance</a></li>
+                            <li class="itemContentFooter"><a href="#">Financing</a></li>
+                            <li class="itemContentFooter"><a href="#">Reuse and Recycling</a></li>
+                            <li class="itemContentFooter"><a href="#">Order Status</a></li>
+                            <li class="itemContentFooter"><a href="#">Shopping Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footerFloatItem">
+                        <ul class="footerItem">
+                            <li class="itemContentFooter"><p><b>Account</b></p></li>
+                            <li class="itemContentFooter"><a href="#">Manage Your Apple ID</a></li>
+                            <li class="itemContentFooter"><a href="#">Apple Store Account</a></li>
+                            <li class="itemContentFooter"><a href="#">iCloud.com</a></li>
+                            <li class="itemContentFooter"><p></p></li>
+                            <li class="itemContentFooter"><p><b>Apple Values</b></p></li>
+                            <li class="itemContentFooter"><a href="#">Accessibility</a></li>
+                            <li class="itemContentFooter"><a href="#">Education</a></li>
+                            <li class="itemContentFooter"><a href="#">Environment</a></li>
+                            <li class="itemContentFooter"><a href="#">Inclusion and Diversity</a></li>
+                            <li class="itemContentFooter"><a href="#">Privacy</a></li>
+                            <li class="itemContentFooter"><a href="#">Supplier Responsibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerBottom">
+                        <small>&#169; Prisyazchnyuk Timofiy. Front-end 2017.</small>
+                    </div>
+                    <div class="col-md-2 footerMyProfile footerFloatItem">
+                        <div class="MyProfile">
+                            <p><b>Timofiy Prisyazchnyuk.</b></p>
+                        </div>
+                        <ul class="Profile">
+                            <li class="itemProfile">
+                                <img src="img/facebookProfile.png" alt="">
+                                <div class="ProofileText">
+                                    <a href="https://www.facebook.com/tima.prisyazhnyuk">
+                                    <img src="img/I.png" alt="My photo">
+                                    <p>My Facebook</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="itemProfile">
+                                <img src="img/InstagramProfile.png" alt="">
+                                <div class="ProofileText">
+                                    <a href="https://www.instagram.com/tima_prisyazhnyuk/?hl=ru">
+                                        <img src="img/I.png" alt="My photo">
+                                        <p>My Instagram</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="itemProfile">
+                                <img src="img/phoneProfile.png" alt="">
+                                <div class="ProofileText">
+                                    <small>+(380)68 892 92 72</small>
+                                    <small>timon3060@gmail.com</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 col-md-offset-1 ButtonGoUp footerFloatItem">
+                         <div class="ItemGoUp">
+                             <a href="#" class="upAnimate">Up</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/granim.min.js"></script>
+<script src="js/3.js"></script>
+</body>
+</html>
